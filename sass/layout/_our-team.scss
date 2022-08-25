@@ -1,0 +1,82 @@
+.background-command {
+  background-color: #f5f4fa;
+  padding-bottom: 94px;
+}
+
+.headline-command {
+  text-align: center;
+  @include font(36px, 700, 42px);
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 94px;
+  padding-top: 94px;
+}
+
+.container-command {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.frame {
+  width: 270px;
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.section-command {
+  padding: 30px 0;
+}
+
+.name-command {
+  @include font(16px, 500, 19px);
+  letter-spacing: 0.03em;
+  color: var(--second-accent-color);
+}
+
+.name-position {
+  @include font(16px, 400, 19px);
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.social-list-icon {
+  fill: var(--fill-color);
+  transition: fill var(--speed) var(--cubic);
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  transition: background-color var(--speed) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-list-icon {
+  fill: var(--fill-color);
+  transition: fill var(--speed) var(--cubic);
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: var(--background-accent-color);
+  }
+}

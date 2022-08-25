@@ -1,0 +1,63 @@
+.footer-subscribe {
+  @include font(14px, 700, 16px);
+  letter-spacing: 0.03em;
+  color: var(--background-accent-color);
+  margin-left: 93px;
+}
+
+.form-footer {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.form-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 93px;
+  background: var(--background-second-color);
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: var(--background-accent-color);
+  transition: border-color var(--speed) var(--cubic);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.button-send-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  @include font(16px, 700, 30px);
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  color: var(--background-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 29px;
+  transition: background-color var(--speed) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--background-accent-button);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.icon-send {
+  margin-left: 10px;
+}

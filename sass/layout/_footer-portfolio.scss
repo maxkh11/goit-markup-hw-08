@@ -1,0 +1,37 @@
+.background-footer-portfolio {
+  background-color: var(--background-second-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.mail-address-portfolio {
+  @include font(14px, 500, 16px);
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+  margin-right: 50px;
+  display: block;
+  transition: color var(--speed) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.phone-number-portfolio {
+  @include font(14px, 500, 16px);
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+  display: block;
+  transition: color var(--speed) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.current-portfolio {
+  background-color: var(--accent-color);
+  color: var(--background-accent-color);
+}
