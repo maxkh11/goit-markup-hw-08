@@ -7,6 +7,12 @@
   display: flex;
   align-items: center;
   transition: color var(--speed) var(--cubic);
+
+  @media screen and (min-width: 481px) and (max-width: 1200px) {
+    padding-top: 21px;
+    padding-bottom: 0;
+    margin-right: 0;
+  }
 }
 
 .social-icon-header {
@@ -33,5 +39,10 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 1200px) {
+    padding-top: 10px;
+    padding-bottom: 21px;
   }
 }

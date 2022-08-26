@@ -121,10 +121,25 @@ body {
 .page-nav__menu-link .current {
   color: var(--accent-color);
 }
+@media (max-width: 480px) {
+  .page-nav__menu-link {
+    display: none;
+  }
+}
 
 .address-tel-container {
   display: flex;
   align-items: center;
+}
+@media (max-width: 480px) {
+  .address-tel-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  .address-tel-container {
+    display: block;
+  }
 }
 
 .command {
@@ -347,6 +362,13 @@ body {
   align-items: center;
   transition: color var(--speed) var(--cubic);
 }
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  .mail-address {
+    padding-top: 21px;
+    padding-bottom: 0;
+    margin-right: 0;
+  }
+}
 
 .social-icon-header {
   display: flex;
@@ -373,6 +395,12 @@ body {
 }
 .phone-number:hover, .phone-number:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  .phone-number {
+    padding-top: 10px;
+    padding-bottom: 21px;
+  }
 }
 
 .hero {
