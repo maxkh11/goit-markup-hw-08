@@ -146,6 +146,8 @@ body {
     display: none;
   }
   .mobile-list {
+    display: flex;
+    flex-direction: column;
     margin-top: 48px;
     margin-left: 40px;
     gap: 32px;
@@ -179,12 +181,14 @@ body {
     color: var(--accent-color);
   }
   .mobile-address-tel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     margin-left: 40px;
     margin-top: 302px;
   }
 }
 .mobile-phone-number {
-  display: block;
   font-size: 34px;
   font-weight: 500;
   line-height: 1.1764705882;
@@ -206,6 +210,24 @@ body {
   transition: color var(--speed) var(--cubic);
 }
 .mobile-mail-address:hover, .mobile-mail-address:focus {
+  color: var(--accent-color);
+}
+.mobile-mail-address .mobile-social {
+  display: flex;
+  margin-left: 40px;
+}
+.mobile-mail-address .mobile-social-item {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--second-accent-color);
+}
+.mobile-mail-address .mobile-social-link {
+  color: var(--second-accent-color);
+  transition: color var(--speed) var(--cubic);
+}
+.mobile-mail-address .mobile-social-link:hover, .mobile-mail-address .mobile-social-link:focus {
   color: var(--accent-color);
 }
 
