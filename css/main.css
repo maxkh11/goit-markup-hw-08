@@ -184,13 +184,14 @@ body {
   }
 }
 .mobile-phone-number {
+  display: block;
   font-size: 34px;
   font-weight: 500;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
   color: var(--accent-text-color);
   transition: color var(--speed) var(--cubic);
-  margin-bottom: 32px;
 }
 .mobile-phone-number:hover, .mobile-phone-number:focus {
   color: var(--accent-color);
@@ -203,7 +204,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
   transition: color var(--speed) var(--cubic);
-  margin-top: 32px;
 }
 .mobile-mail-address:hover, .mobile-mail-address:focus {
   color: var(--accent-color);
