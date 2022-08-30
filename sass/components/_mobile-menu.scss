@@ -149,10 +149,13 @@
 .mobile-social-item {
   @include font(18px, 500, 22px);
   letter-spacing: 0.02em;
+  padding-right: 10px;
   color: var(--second-accent-color);
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
 }
+
+.mobile-social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
 
 .mobile-social-link {
   color: var(--second-accent-color);

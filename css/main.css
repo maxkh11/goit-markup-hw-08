@@ -230,9 +230,12 @@ body {
   font-weight: 500;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
+  padding-right: 10px;
   color: var(--second-accent-color);
+}
+
+.mobile-social-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
 }
 
 .mobile-social-link {
