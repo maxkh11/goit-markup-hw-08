@@ -548,7 +548,6 @@ body {
   }
   .address-tel-container {
     display: flex;
-    align-items: center;
   }
   .mail-address {
     font-size: 14px;
